@@ -27,6 +27,6 @@ div.box a.phoneButton{color: #333333; font-weight: bold; font-size: 23px; text-d
 div.box a.phoneButton span.phone{background: white url('/images/phoneBtnBkg.png') no-repeat; display: block; line-height: 49px; padding: 0 0 0 76px; }
 div.box div.address{float:left; font-size: 13px; color: #666666; margin: 11px 0 0 0; line-height: 15px;}
 
-div#footer{margin:20px 0 0 0; width:100%; text-align:center;}
+div#footer{margin:20px 0 0 0; width:100%; text-align:center; clear: both;}
 div#footer p{font-size:11px; color: #FFFFFF; text-shadow: 0px 1px 0px #1C4052;}
 div#footer p a,div#footer p a:visited{color: #122a37; text-decoration:underline;}

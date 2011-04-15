@@ -57,7 +57,7 @@
         $('div.content').append(malls_html);
 
         $.each(malls, function(index, mall){
-          mall_position = new google.maps.LatLng(mall['lat'], mall['long']);
+          mall_position = new google.maps.LatLng(mall['latitude'], mall['longitude']);
           request = {origin:actual_position, destination:mall_position, travelMode: google.maps.DirectionsTravelMode.DRIVING};
 
           directionsService.route(request, function(response, status) {
