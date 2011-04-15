@@ -1,0 +1,4 @@
+config/cartodb_config.yml
+log/*
+tmp/*
+tmp/**/*

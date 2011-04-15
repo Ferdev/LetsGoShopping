@@ -1,0 +1,20 @@
+<script type="text/javascript" charset="utf-8">
+  malls = <%= @malls.to_json.html_safe %>;
+</script>
+
+<% @malls.each do |mall| %>
+  <div class="box">
+    <h3 class="mallName"><%= mall[:nombre] %></h3>
+    <p class="distance">- / -</p>
+    <a target="_blank" href="#">
+    <div style="display:inline-block; margin:10px 0 0 0; width:243px;height:150px;border:1px solid #CCCCCC;" id="mall_<%= mall[:cartodb_id] %>"></div>
+    </a>
+    <div class="address">
+      <%=  %>
+      <p>
+      <%= mall[:direccion] %>,</br>
+      <%= "#{mall[:municipio]}" %><br/>
+      </p>
+    </div>
+  </div>
+<% end %>
