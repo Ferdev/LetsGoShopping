@@ -20,14 +20,21 @@
       $('span.loader p').text('Obteniendo tu posición...');
       $('div.box').animate({opacity:0},200);
       $('span.loader').fadeIn('slow',function(){
-        if(navigator.geolocation){
+
+        handleGetCurrentPosition()
+
+        /*if(navigator.geolocation){
           navigator.geolocation.getCurrentPosition(handleGetCurrentPosition, handleGetCurrentPositionError);
-        }
+        }*/
       });
     }
 
-    function handleGetCurrentPosition(location){
+    //function handleGetCurrentPosition(location){
+    function handleGetCurrentPosition(){
+      var location = {coords:{latitude:43.324397,longitude:-1.977904}};
+
       actual_position = new google.maps.LatLng(location.coords.latitude, location.coords.longitude);
+
       var count = 0;
 
       $(document).bind('load',function(){
